@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 class Main {
   public static void main (String[] args) {
+    boolean siren = false;
     System.out.println("Welcome to Mythical Monsters! A game that... I haven't really decided what it does tbh, I'm just kinda testing this out lol.");
     System.out.println("Anywaysssssss, what's you name?");
     Scanner sc = new Scanner(System.in);
@@ -35,6 +36,7 @@ class Main {
         button.setVisible(false);
         sirens();
 
+
       }
     });
     frame.add(button);
@@ -46,12 +48,14 @@ class Main {
 
   }
 
-  public static void sirens() {
+  public static boolean sirens() {
     System.out.println("Sirens huh? In that case, I have someone you'd might like to meet.");
+    return true;
   }
 
-  public static void vampires() {
+  public static boolean vampires() {
     System.out.println("Vampires huh? In that case, I have someone you'd might like to meet.");
+    return true;
   }
 
 }
