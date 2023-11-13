@@ -25,6 +25,7 @@ class Main {
       public void actionPerformed(ActionEvent e) {
         button.setVisible(false);
         button2.setVisible(false);
+        vampires();
       }
     });
 
@@ -43,11 +44,14 @@ class Main {
     frame.setLayout(null);
     frame.setVisible(true);
 
-    
   }
 
   public static void sirens() {
-    System.out.println("Sirens are cool!");
+    System.out.println("Sirens huh? In that case, I have someone you'd might like to meet.");
+  }
+
+  public static void vampires() {
+    System.out.println("Vampires huh? In that case, I have someone you'd might like to meet.");
   }
 
 }
